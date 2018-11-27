@@ -29,9 +29,14 @@ export const Menu = styled.ul`
 `
 
 export const MenuItem = styled.a`
-  color: white;
+  color: ${props => props.Colors.secondary};
   text-decoration: none;
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media (min-width: 780px) {
+  &:hover {
+    text-decoration: underline;
+  }
+}
 `

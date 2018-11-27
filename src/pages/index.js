@@ -7,14 +7,17 @@ import SocialMediaLinks from '../components/SocialMediaLinks'
 import Navbar from '../components/Navbar'
 
 const Colors = {
-  primary: '#232323',
-  primary_inverse: '#ffffff'
+  primary: '#ffffff',
+  secondary: '#232323'
 }
+
+// primary: '#232323',
+// secondary: '#ffffff'
 
 const GlobalStyle = createGlobalStyle`
   html, body {
     background-color: ${Colors.primary};
-    color: ${Colors.primary_inverse};
+    color: ${Colors.secondary};
     font-family: Open Sans;
     padding: 0;
     margin: 0;
@@ -26,6 +29,7 @@ const Container = styled.main`
   flex-direction: column;
   align-items: center;
   object-fit: cover;
+  height: 100vh;
 `
 
 class App extends Component {
@@ -34,18 +38,9 @@ class App extends Component {
       <Container>
         <GlobalStyle />
         <Navbar Colors={Colors} />
-        <Avatar />
-        <Intro />
-        <SocialMediaLinks />
-        <p>vcfsjbvkfsjjfnvjfnvjdfl</p>
-        <p>vcfsjbvkfsjjfnvjfnvjdfl</p>
-        <p>vcfsjbvkfsjjfnvjfnvjdfl</p>
-        <p>vcfsjbvkfsjjfnvjfnvjdfl</p>
-        <p>vcfsjbvkfsjjfnvjfnvjdfl</p>
-        <p>vcfsjbvkfsjjfnvjfnvjdfl</p>
-        <p>vcfsjbvkfsjjfnvjfnvjdfl</p>
-        <p>vcfsjbvkfsjjfnvjfnvjdfl</p>
-        <p>vcfsjbvkfsjjfnvjfnvjdfl</p>
+        <Avatar Colors={Colors} />
+        <Intro Colors={Colors} />
+        <SocialMediaLinks Colors={Colors} />
       </Container>
     )
   }

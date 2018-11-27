@@ -4,34 +4,34 @@ import { faUserCircle, faWrench , faArchive, faPencilAlt, faEnvelope } from '@fo
 
 import { Menu, MenuItem, IconContainer } from './elements'
 
-const Navber = props => {
+const Navbar = props => {
   return (
     <>
     <Menu Colors={props.Colors}>
-      <MenuItem href="#">
+      <MenuItem href="#" Colors={props.Colors}>
         <IconContainer><FontAwesomeIcon icon={faUserCircle} /></IconContainer>
         About
       </MenuItem>
-      <MenuItem href="#">
+      <MenuItem href="#" Colors={props.Colors}>
         <IconContainer><FontAwesomeIcon icon={faWrench} /></IconContainer>
         Skills
       </MenuItem>
-      <MenuItem href="#">
+      <MenuItem href="#" Colors={props.Colors}>
         <IconContainer><FontAwesomeIcon icon={faArchive} /></IconContainer>
         Projects
       </MenuItem>
-      <MenuItem href="#">
+      <MenuItem href="#" Colors={props.Colors}>
         <IconContainer><FontAwesomeIcon icon={faPencilAlt} /></IconContainer>
         Writing
       </MenuItem>
-      <MenuItem href="#">
+      <MenuItem href="#" Colors={props.Colors}>
         <IconContainer><FontAwesomeIcon icon={faEnvelope} /></IconContainer>
         Contact
       </MenuItem>
     </Menu>
-    <div style={{marginTop: "4rem"}}></div>
+    <div style={{marginTop: "5rem"}}></div>
     </>
   )
 }
 
-export default Navber
+export default Navbar
