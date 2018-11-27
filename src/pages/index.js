@@ -12,10 +12,12 @@ const Colors = {
 }
 
 const GlobalStyle = createGlobalStyle`
-  body {
+  html, body {
     background-color: ${Colors.primary};
     color: ${Colors.primary_inverse};
     font-family: Open Sans;
+    padding: 0;
+    margin: 0;
   }
 `
 
@@ -23,6 +25,7 @@ const Container = styled.main`
   display: flex;
   flex-direction: column;
   align-items: center;
+  object-fit: cover;
 `
 
 class App extends Component {
@@ -30,10 +33,19 @@ class App extends Component {
     return (
       <Container>
         <GlobalStyle />
-        <Navbar />
+        <Navbar Colors={Colors} />
         <Avatar />
         <Intro />
         <SocialMediaLinks />
+        <p>vcfsjbvkfsjjfnvjfnvjdfl</p>
+        <p>vcfsjbvkfsjjfnvjfnvjdfl</p>
+        <p>vcfsjbvkfsjjfnvjfnvjdfl</p>
+        <p>vcfsjbvkfsjjfnvjfnvjdfl</p>
+        <p>vcfsjbvkfsjjfnvjfnvjdfl</p>
+        <p>vcfsjbvkfsjjfnvjfnvjdfl</p>
+        <p>vcfsjbvkfsjjfnvjfnvjdfl</p>
+        <p>vcfsjbvkfsjjfnvjfnvjdfl</p>
+        <p>vcfsjbvkfsjjfnvjfnvjdfl</p>
       </Container>
     )
   }

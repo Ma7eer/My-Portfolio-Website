@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faCodepen, faFreeCodeCamp, faMedium, faTwitter, faHackerrank } from '@fortawesome/free-brands-svg-icons'
 
