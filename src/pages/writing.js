@@ -5,6 +5,8 @@ import Avatar from '../components/Avatar'
 import Intro from '../components/Intro'
 import SocialMediaLinks from '../components/SocialMediaLinks'
 import Navbar from '../components/Navbar'
+import Header from '../components/Header'
+import Description from '../components/Description'
 
 const Colors = {
   primary: '#ffffff',
@@ -43,6 +45,14 @@ class App extends Component {
         <Avatar Colors={Colors} />
         <Intro Colors={Colors} />
         <SocialMediaLinks Colors={Colors} />
+      </Container>
+      <Container id="projects">
+        <Header text="Projects" />
+        <Description text="I am interested in everything JavaScript and .NET Core" />
+      </Container>
+      <Container id="writing">
+        <Header text="Writing" />
+        <Description text="I am interested in everything JavaScript and .NET Core" />
       </Container>
       </>
     )
