@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import { createGlobalStyle } from 'styled-components'
 
 import LeftColumn from '../components/LeftColumn'
+import Header from '../components/Header'
 
 // const Colors = {
 //   primary: '#ffffff',
