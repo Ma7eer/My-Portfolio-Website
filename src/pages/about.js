@@ -33,7 +33,7 @@ class About extends Component {
       <>
       <LeftColumn />
       <div style={{backgroundColor: "white", marginLeft: "25%"}}>
-      <h1 style={{color: "black"}}>This is the writing page</h1>
+      <h1 style={{color: "black"}}>This is the About page</h1>
       </div>
       </>
     )
