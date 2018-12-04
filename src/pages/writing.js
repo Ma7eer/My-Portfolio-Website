@@ -2,6 +2,7 @@ import React, { Component } from "react"
 // import styled, { createGlobalStyle } from 'styled-components'
 
 import LeftColumn from '../components/LeftColumn'
+import Header from '../components/Header'
 
 // const Colors = {
 //   primary: '#ffffff',
@@ -33,7 +34,7 @@ class About extends Component {
       <>
       <LeftColumn />
       <div style={{backgroundColor: "white", marginLeft: "25%"}}>
-      <h1 style={{color: "black"}}>This is the writing page</h1>
+      <Header text='writing'/>
       </div>
       </>
     )

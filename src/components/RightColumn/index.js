@@ -2,19 +2,13 @@ import React from "react"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faEnvelope} from '@fortawesome/free-solid-svg-icons'
 
+import Header from '../Header'
+
 const RightColumn = props => {
     return (
       <>
       <div style={{backgroundColor: "white", paddingLeft: "25%"}}>
-      <h1 style={{
-      color: "white",
-      backgroundColor: "blue",
-      margin: "0",
-      fontWeight: '200',
-      marginBottom: '60px',
-      marginTop: '0',
-      padding: '30px 40px',
-      textTransform: 'uppercase'}}>Contact</h1>
+      <Header text='Contact' />
       <div style={{width: '95%', padding: '0 1.5rem', margin: '0 auto', maxWidth: '1280px'}}>
       <p style={{display: 'flex', alignItems: 'center'}}>
         <div style={{

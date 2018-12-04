@@ -1,52 +1,44 @@
 import React, { Component } from "react"
-import styled, { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from 'styled-components'
 
-import Avatar from '../components/Avatar'
-import Intro from '../components/Intro'
-import SocialMediaLinks from '../components/SocialMediaLinks'
-import Navbar from '../components/Navbar'
+import LeftColumn from '../components/LeftColumn'
 
-const Colors = {
-  primary: '#ffffff',
-  secondary: '#232323'
-}
-
-// primary: '#232323',
-// secondary: '#ffffff'
+// const Colors = {
+//   primary: '#ffffff',
+//   secondary: '#232323'
+// }
 
 const GlobalStyle = createGlobalStyle`
   html, body {
-    background-color: ${Colors.primary};
-    color: ${Colors.secondary};
     font-family: Open Sans;
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
   }
 `
+// background-color: ${Colors.primary};
+// color: ${Colors.secondary};
 
-const Container = styled.main`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  object-fit: cover;
-  height: 100vh;
-`
+// const Container = styled.main`
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   object-fit: cover;
+//   height: 100vh;
+// `
 
-class App extends Component {
+class About extends Component {
   render() {
     return (
       <>
-      <Container id="about">
-        <GlobalStyle />
-        <Navbar Colors={Colors} />
-        <Avatar Colors={Colors} />
-        <Intro Colors={Colors} />
-        <SocialMediaLinks Colors={Colors} />
-      </Container>
+      <GlobalStyle />
+      <LeftColumn />
+      <div style={{backgroundColor: "white", marginLeft: "25%"}}>
+      <h1 style={{color: "black"}}>This is the index page</h1>
+      </div>
       </>
     )
   }
 }
 
-export default App
+export default About
