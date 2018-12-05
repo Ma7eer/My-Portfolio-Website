@@ -34,7 +34,7 @@ class About extends Component {
       <>
       <GlobalStyle />
       <LeftColumn />
-      <RightColumn />
+      <RightColumn page='contact'/>
       </>
     )
   }

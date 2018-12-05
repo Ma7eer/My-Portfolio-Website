@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import {Link} from 'gatsby'
 
 export const List = styled.ul`
     list-style: none;
@@ -10,8 +11,8 @@ export const List = styled.ul`
     width: 25%;
 `
 
-export const ListItem = styled.a`
-    lime-height: 100%;
+export const ListItem = styled(Link)`
+    line-height: 100%;
     padding: 10px 0 12px;
     font-size: 1.3rem;
     width: auto;

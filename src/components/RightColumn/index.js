@@ -1,31 +1,50 @@
 import React from "react"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faEnvelope} from '@fortawesome/free-solid-svg-icons'
+import {faGithub, faTwitter, faMedium} from '@fortawesome/free-brands-svg-icons'
 
 import Header from '../Header'
+import { PageContainer, ContentContainer, ContentItem, IconContainer, TextLink } from './elements'
+
+const ContactLink = ({goToLink, linkIcon, text}) => {
+  return (
+    <ContentContainer>
+    <ContentItem>
+    <IconContainer href={goToLink}>
+      <FontAwesomeIcon style={{color: 'white', backgroundColor: 'green', padding: '15px', borderRadius: '50%'}} icon={linkIcon}/>
+    </IconContainer>
+    <TextLink href={goToLink}>{text}</TextLink>
+    </ContentItem>
+    </ContentContainer>
+  )
+}
+
+const Contact = () => {
+  return (
+    <PageContainer>
+      <Header text='Contact'/>
+      <ContactLink goToLink='mailto:maher.alkendi2@gmail.com'  linkIcon={faEnvelope} text='maher.alkendi2@gmail.com'/>
+      <ContactLink goToLink='https://github.com/Ma7eer'  linkIcon={faGithub} text='github.com/Ma7eer'/>
+      <ContactLink goToLink='https://twitter.com/maheralkendi'  linkIcon={faTwitter} text='twitter.com/maheralkendi' />
+      <ContactLink goToLink='https://medium.com/@maher.alkendi2'  linkIcon={faMedium} text='medium.com/@maher.alkendi2' />
+    </PageContainer>
+  )
+}
+
+const Skills = () => {
+  return (
+    <PageContainer>
+      <Header text='Skills'/>
+    </PageContainer>
+  )
+}
 
 const RightColumn = props => {
-    return (
-      <>
-      <div style={{backgroundColor: "white", paddingLeft: "25%"}}>
-      <Header text='Contact' />
-      <div style={{width: '95%', padding: '0 1.5rem', margin: '0 auto', maxWidth: '1280px'}}>
-      <p style={{display: 'flex', alignItems: 'center'}}>
-        <div style={{
-            width: '55.5px', 
-            height: '55.5px', 
-            cursor: 'pointer', 
-            backgroundColor: 'green', 
-            borderRadius: '50%', 
-            lineHeight: '55.5px', 
-            fontSize: '1.6rem', 
-            margin: '0px 15px'}}><FontAwesomeIcon style={{color: 'white', backgroundColor: 'green', marginLeft: '25%'}} icon={faEnvelope}/></div>
-        <a href='/contact'>maher.alkendi2@gmail.com</a>
-      </p>
-      </div>
-      </div>
-      </>
-    )
+  if (props.page === 'contact') {
+    return <Contact />
+  } else if (props.page === 'skills') {
+    return <Skills />
+  }
 }
 
 export default RightColumn
