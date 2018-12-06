@@ -4,6 +4,7 @@ import {faEnvelope} from '@fortawesome/free-solid-svg-icons'
 import {faGithub, faTwitter, faMedium} from '@fortawesome/free-brands-svg-icons'
 
 import Header from '../Header'
+import SkillsCard from '../SkillsCard'
 import { PageContainer, ContentContainer, ContentItem, IconContainer, TextLink } from './elements'
 
 const ContactLink = ({goToLink, linkIcon, text}) => {
@@ -35,6 +36,7 @@ const Skills = () => {
   return (
     <PageContainer>
       <Header text='Skills'/>
+      <SkillsCard />
     </PageContainer>
   )
 }

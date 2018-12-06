@@ -13,6 +13,8 @@ export const Card = styled.div`
   border-radius: 2px;
   background-clip: padding-box;
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+  margin-left: 5%;
+  margin-bottom: 5%;
 `
 
 export const CardContent = styled.div`
