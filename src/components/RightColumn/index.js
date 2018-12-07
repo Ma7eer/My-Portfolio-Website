@@ -5,6 +5,7 @@ import {faGithub, faTwitter, faMedium} from '@fortawesome/free-brands-svg-icons'
 
 import Header from '../Header'
 import SkillsCard from '../SkillsCard'
+import ArticleList from '../ArticleList'
 import { PageContainer, ContentContainer, ContentItem, IconContainer, TextLink } from './elements'
 
 const ContactLink = ({goToLink, linkIcon, text}) => {
@@ -41,11 +42,42 @@ const Skills = () => {
   )
 }
 
+const Writing = () => {
+  return (
+    <PageContainer>
+      <Header text='Writing'/>
+      <ArticleList />
+    </PageContainer>
+  )
+}
+
+const Projects = () => {
+  return (
+    <PageContainer>
+      <Header text='Projects' />
+    </PageContainer>
+  )
+}
+
+const About = () => {
+  return (
+    <PageContainer>
+      <Header text='About'/>
+    </PageContainer>
+  )
+}
+
 const RightColumn = props => {
   if (props.page === 'contact') {
     return <Contact />
   } else if (props.page === 'skills') {
     return <Skills />
+  } else if (props.page === 'writing') {
+    return <Writing />
+  } else if (props.page === 'projects') {
+    return <Projects />
+  } else {
+    return <About />
   }
 }
 
