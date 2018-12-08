@@ -1,12 +1,14 @@
 import React from "react"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faEnvelope} from '@fortawesome/free-solid-svg-icons'
-import {faGithub, faTwitter, faMedium} from '@fortawesome/free-brands-svg-icons'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faGithub, faTwitter, faMedium } from '@fortawesome/free-brands-svg-icons'
+import '../../../node_modules/imagehover.css/css/imagehover.css'
 
 import Header from '../Header'
 import SkillsCard from '../SkillsCard'
 import ArticleList from '../ArticleList'
 import { PageContainer, ContentContainer, ContentItem, IconContainer, TextLink } from './elements'
+import tempImage from '../../images/profile.jpg'
 
 const ContactLink = ({goToLink, linkIcon, text}) => {
   return (
@@ -51,10 +53,102 @@ const Writing = () => {
   )
 }
 
-const Projects = () => {
+const Projects = () => { // make images smaller as screen gets smaller then start wraping
   return (
     <PageContainer>
       <Header text='Projects' />
+      <div className='project-grid' style={{padding: '2rem 0 4rem', display: 'flex', flexWrap: 'wrap', justifyContent: 'center'}}>
+      <figure className='imghvr-push-left' style={{margin: '12px'}}>
+      <img src={tempImage} alt='' height='245' width="360" />
+      <figcaption style={{display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center'}}>
+        A node application that performs a simple email and password authentication using passport js
+        <div style={{marginTop: '30%'}}>
+        <button>Visit Site</button>
+        <button>View Code</button>
+        </div>
+      </figcaption>
+      </figure>
+      <figure className='imghvr-push-left' style={{margin: '12px'}}>
+      <img src={tempImage} alt='' height='245' width="360" />
+            <figcaption style={{display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center'}}>
+        A node application that performs a simple email and password authentication using passport js
+        <div style={{marginTop: '30%'}}>
+        <button>Visit Site</button>
+        <button>View Code</button>
+        </div>
+      </figcaption>
+      </figure>
+      <figure className='imghvr-push-left' style={{margin: '12px'}}>
+      <img src={tempImage} alt='' height='245' width="360" />
+            <figcaption style={{display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center'}}>
+        A node application that performs a simple email and password authentication using passport js
+        <div style={{marginTop: '30%'}}>
+        <button>Visit Site</button>
+        <button>View Code</button>
+        </div>
+      </figcaption>
+      </figure>
+      <figure className='imghvr-push-left' style={{margin: '12px'}}>
+      <img src={tempImage} alt='' height='245' width="360" />
+            <figcaption style={{display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center'}}>
+        A node application that performs a simple email and password authentication using passport js
+        <div style={{marginTop: '30%'}}>
+        <button>Visit Site</button>
+        <button>View Code</button>
+        </div>
+      </figcaption>
+      </figure>
+      <figure className='imghvr-push-left' style={{margin: '12px'}}>
+      <img src={tempImage} alt='' height='245' width="360" />
+            <figcaption style={{display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center'}}>
+        A node application that performs a simple email and password authentication using passport js
+        <div style={{marginTop: '30%'}}>
+        <button>Visit Site</button>
+        <button>View Code</button>
+        </div>
+      </figcaption>
+      </figure>
+      <figure className='imghvr-push-left' style={{margin: '12px'}}>
+      <img src={tempImage} alt='' height='245' width="360" />
+            <figcaption style={{display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center'}}>
+        A node application that performs a simple email and password authentication using passport js
+        <div style={{marginTop: '30%'}}>
+        <button>Visit Site</button>
+        <button>View Code</button>
+        </div>
+      </figcaption>
+      </figure>
+      <figure className='imghvr-push-left' style={{margin: '12px'}}>
+      <img src={tempImage} alt='' height='245' width="360" />
+            <figcaption style={{display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center'}}>
+        A node application that performs a simple email and password authentication using passport js
+        <div style={{marginTop: '30%'}}>
+        <button>Visit Site</button>
+        <button>View Code</button>
+        </div>
+      </figcaption>
+      </figure>
+      <figure className='imghvr-push-left' style={{margin: '12px'}}>
+      <img src={tempImage} alt='' height='245' width="360" />
+            <figcaption style={{display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center'}}>
+        A node application that performs a simple email and password authentication using passport js
+        <div style={{marginTop: '30%'}}>
+        <button>Visit Site</button>
+        <button>View Code</button>
+        </div>
+      </figcaption>
+      </figure>
+      <figure className='imghvr-push-left' style={{margin: '12px'}}>
+      <img src={tempImage} alt='' height='245' width="360" />
+            <figcaption style={{display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center'}}>
+        A node application that performs a simple email and password authentication using passport js
+        <div style={{marginTop: '30%'}}>
+        <button>Visit Site</button>
+        <button>View Code</button>
+        </div>
+      </figcaption>
+      </figure>
+      </div>
     </PageContainer>
   )
 }
