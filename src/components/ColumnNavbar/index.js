@@ -48,11 +48,12 @@ class LeftColumn extends React.Component {
     constructor() {
         super();
         this.state = {
-          width: window.innerWidth,
+          width: 1000,
         };
       }
       
       componentDidMount() {
+          this.setState({width: window.innerWidth})
         window.addEventListener('resize', this.handleWindowSizeChange);
       }
       
