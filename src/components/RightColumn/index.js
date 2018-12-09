@@ -157,6 +157,20 @@ const About = () => {
   return (
     <PageContainer>
       <Header text='About'/>
+      <h1>A passionate Web Developer working on Getting better everyday</h1>
+      <p>lorem vfdsn aflkgjnbv fdvjf bvfdslkbv gfdskb gfdb gkb ks lorem vfdsn aflkgjnbv fdvjf bvfdslkbv gfdskb gfdb gkb ks lorem vfdsn aflkgjnbv fdvjf bvfdslkbv gfdskb gfdb gkb ks</p>
+      <p>Current Focus: Building my Website</p>
+    </PageContainer>
+  )
+}
+const Index = () => {
+  return (
+    <PageContainer>
+      <h1 style={{fontSize: '70px', marginLeft: '5%', marginBottom: '0'}}>Maher Alkendi</h1>
+      <p style={{fontSize: '25px', marginLeft: '5%'}}>Full-stack Web Developer</p>
+      <FontAwesomeIcon style={{fontSize: '40px', marginLeft: '5%'}} icon={faGithub} />
+      <FontAwesomeIcon style={{fontSize: '40px', marginLeft: '2%'}} icon={faTwitter} />
+      <FontAwesomeIcon style={{fontSize: '40px', marginLeft: '2%'}} icon={faMedium} />
     </PageContainer>
   )
 }
@@ -170,8 +184,10 @@ const RightColumn = props => {
     return <Writing />
   } else if (props.page === 'projects') {
     return <Projects />
-  } else {
+  } else if (props.page === 'about') {
     return <About />
+  } else {
+    return <Index />
   }
 }
 

@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Link } from 'gatsby'
 
 export const Column = styled.aside`
     background-color: black;
@@ -20,11 +21,12 @@ export const InnerColumn = styled.div`
     padding: 45px 0px;
 ` // 45px 40px
 
-export const Avatar = styled.div`
+export const Avatar = styled(Link)`
     text-align: center;
     display: block;
     color: inherit;
     border-bottom: 1px solid black;
+    text-decoration: none;
 `
 
 export const ImageContainer = styled.div`

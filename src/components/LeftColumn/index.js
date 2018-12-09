@@ -9,7 +9,7 @@ const LeftColumn = props => {
       <>
       <Column>
         <InnerColumn>
-          <Avatar>
+          <Avatar to='/'>
           <ImageContainer>
           <Image src={avatar} alt="" />
           </ImageContainer>
