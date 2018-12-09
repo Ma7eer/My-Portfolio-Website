@@ -1,7 +1,7 @@
 import React from "react"
 
 import Navbar from '../ColumnNavbar'
-import { Column, InnerColumn, Avatar, ImageContainer, Image, ContentContainer, MyName, MyTitle } from './elements'
+import { Column, InnerColumn, Avatar, ImageContainer, Image, ContentContainer, MyName, MyTitle, HorizontalLine, Top, Burger } from './elements'
 import avatar from '../../images/profile.jpg'
 
 const LeftColumn = props => {
@@ -9,6 +9,7 @@ const LeftColumn = props => {
       <>
       <Column>
         <InnerColumn>
+          <Burger />
           <Avatar to='/'>
           <ImageContainer>
           <Image src={avatar} alt="" />
@@ -18,10 +19,11 @@ const LeftColumn = props => {
           <MyTitle>FULL-STACK WEB DEVELOPER</MyTitle>
           </ContentContainer>
           </Avatar>
-          <hr />
+          <HorizontalLine />
           <Navbar />
           </InnerColumn>
         </Column>
+        <Top />
       </>
     )
 }

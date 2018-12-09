@@ -9,6 +9,9 @@ export const List = styled.ul`
     left: 0;
     position: fixed;
     width: 25%;
+    @media (max-width: 992px) {
+        display: none;
+    }
 `
 
 export const ListItem = styled(Link)`
