@@ -9,4 +9,8 @@ export const Title = styled.h1`
   margin-top: 0;
   padding: 30px 40px;
   text-transform: uppercase;
+  width: 100%;
+  @media (max-width: 992px) {
+    width: 100%;
+}
 `

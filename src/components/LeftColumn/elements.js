@@ -86,7 +86,7 @@ export const HorizontalLine = styled.hr`
 export const Top = styled.div`
     margin-top: 0;
     @media (max-width: 992px) {
-        margin-top: 20%;
+        margin-top: 75px;
     }
 `
 
