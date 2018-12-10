@@ -26,3 +26,16 @@ export const ListItem = styled(Link)`
         border-left: 2px solid red;
     }
 `
+
+export const ListItemResume = styled.a`
+    line-height: 100%;
+    padding: 10px 0 12px;
+    font-size: 1.3rem;
+    width: auto;
+    color: white;
+    text-decoration: none;
+    &:hover {
+        background-color: grey;
+        border-left: 2px solid red;
+    }
+`
