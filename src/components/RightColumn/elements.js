@@ -2,6 +2,9 @@ import styled from 'styled-components'
 
 export const PageContainer = styled.div`
     padding-left: 25%;
+    @media (max-width: 992px) {
+        padding-left: 0;
+    }
 `
 
 export const ContentContainer = styled.div`

@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUser, faWindowMaximize, faChartBar, faFile, faEnvelope, faPen } from '@fortawesome/free-solid-svg-icons'
 import { slide as Menu } from 'react-burger-menu'
 
-import { List, ListItem } from './elements'
+import { List, ListItem, ListItemResume } from './elements'
 
 var styles = {
     bmBurgerButton: {
@@ -87,10 +87,10 @@ class LeftColumn extends React.Component {
                       <FontAwesomeIcon icon={faChartBar} style={{padding: "0 15px"}}/>
                       <span>Skills</span>
                   </ListItem>
-                  <ListItem  to="/resume" className="menu-item">
+                  <ListItemResume  href="https://docs.google.com/document/d/10g9GSd1Q9_MDbNoet8t0z52P_BLhDmRRupukyBpfhPE/edit?usp=sharing" className="menu-item">
                       <FontAwesomeIcon icon={faFile} style={{padding: "0 15px"}}/>
                       <span>Resume</span>
-                  </ListItem>
+                  </ListItemResume>
                   <ListItem  to="/contact" className="menu-item">
                       <FontAwesomeIcon icon={faEnvelope} style={{padding: "0 15px"}}/>
                       <span>Contact</span>
@@ -117,10 +117,10 @@ class LeftColumn extends React.Component {
                       <FontAwesomeIcon icon={faChartBar} style={{padding: "0 15px"}}/>
                       <span>Skills</span>
                   </ListItem>
-                  <ListItem  to="/resume">
+                  <ListItemResume  href="https://docs.google.com/document/d/10g9GSd1Q9_MDbNoet8t0z52P_BLhDmRRupukyBpfhPE/edit?usp=sharing">
                       <FontAwesomeIcon icon={faFile} style={{padding: "0 15px"}}/>
                       <span>Resume</span>
-                  </ListItem>
+                  </ListItemResume>
                   <ListItem  to="/contact">
                       <FontAwesomeIcon icon={faEnvelope} style={{padding: "0 15px"}}/>
                       <span>Contact</span>
