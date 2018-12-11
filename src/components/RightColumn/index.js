@@ -10,6 +10,7 @@ import ArticleList from '../ArticleList'
 import { PageContainer, ContentContainer, ContentItem, IconContainer, TextLink, Button } from './elements'
 import tempImage from '../../images/profile.jpg'
 import ProjectOneImg from '../../images/projects/guess_the_flag.png'
+import ProjectTwoImg from '../../images/projects/shopping_cart.png'
 
 const ContactLink = ({goToLink, linkIcon, text}) => {
   return (
@@ -75,16 +76,16 @@ const Projects = () => { // make images smaller as screen gets smaller then star
         </div>
       </figcaption>
       </figure>
-      <figure className='imghvr-push-left' style={{margin: '12px'}}>
-      <img src={ProjectOneImg} alt='' height='245' width="360" />
+      <figure className='imghvr-push-left' style={{margin: '12px', border: '1px solid black'}}>
+      <img src={ProjectTwoImg} alt='' height='245' width="360" />
             <figcaption style={{display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center'}}>
-        A node application that performs a simple email and password authentication using passport js
+        A node application that has the functionality of a shopping cart. Including the ability to make purchases
         <div style={{marginTop: '30%'}}>
         <div style={{display: 'flex'}}>
-        <form method='GET' action='https://awesome-turing-811668.netlify.com/'>
+        <form method='GET' action='https://shielded-plateau-99212.herokuapp.com/'>
           <Button type="submit" >Visit Site</Button>
         </form>
-        <form method='GET' action='https://github.com/Ma7eer/Guess-the-flag'>
+        <form method='GET' action='https://github.com/Ma7eer/Express-Shopping-Cart'>
           <Button type="submit" >View Code</Button>
         </form>
         </div>
