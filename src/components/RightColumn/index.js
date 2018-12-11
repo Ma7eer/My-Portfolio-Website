@@ -76,7 +76,7 @@ const Projects = () => { // make images smaller as screen gets smaller then star
       </figcaption>
       </figure>
       <figure className='imghvr-push-left' style={{margin: '12px'}}>
-      <img src={tempImage} alt='' height='245' width="360" />
+      <img src={ProjectOneImg} alt='' height='245' width="360" />
             <figcaption style={{display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center'}}>
         A node application that performs a simple email and password authentication using passport js
         <div style={{marginTop: '30%'}}>
