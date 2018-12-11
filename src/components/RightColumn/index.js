@@ -12,6 +12,7 @@ import tempImage from '../../images/profile.jpg'
 import ProjectOneImg from '../../images/projects/guess_the_flag.png'
 import ProjectTwoImg from '../../images/projects/shopping_cart.png'
 import ProjectThreeImg from '../../images/projects/travel_middle_east.png'
+import ProjectFourImg from '../../images/projects/joke.png'
 
 const ContactLink = ({goToLink, linkIcon, text}) => {
   return (
@@ -93,7 +94,7 @@ const Projects = () => { // make images smaller as screen gets smaller then star
         </div>
       </figcaption>
       </figure>
-      <figure className='imghvr-push-left' style={{margin: '12px'}}>
+      <figure className='imghvr-push-left' style={{margin: '12px', border: '1px solid black'}}>
       <img src={ProjectThreeImg} alt='' height='245' width="360" />
             <figcaption style={{display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center'}}>
         A static web page that highlights the top cities to travel to in the middle east. Built using Html, CSS, and vanilla Javascript
@@ -109,7 +110,23 @@ const Projects = () => { // make images smaller as screen gets smaller then star
         </div>
       </figcaption>
       </figure>
-      <figure className='imghvr-push-left' style={{margin: '12px'}}>
+      <figure className='imghvr-push-left' style={{margin: '12px', border: '1px solid black'}}>
+      <img src={ProjectFourImg} alt='' height='245' width="360" />
+            <figcaption style={{display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center'}}>
+        A React Redux application that uses the voice synthesis API to tell you jokes from your browser.
+        <div style={{marginTop: '30%'}}>
+        <div style={{display: 'flex'}}>
+        <form method='GET' action='https://amazing-volhard-4d7c8f.netlify.com/'>
+          <Button type="submit" >Visit Site</Button>
+        </form>
+        <form method='GET' action='https://github.com/Ma7eer/Computer-tell-me-a-joke'>
+          <Button type="submit" >View Code</Button>
+        </form>
+        </div>
+        </div>
+      </figcaption>
+      </figure>
+      <figure className='imghvr-push-left' style={{margin: '12px', border: '1px solid black'}}>
       <img src={tempImage} alt='' height='245' width="360" />
             <figcaption style={{display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center'}}>
         A node application that performs a simple email and password authentication using passport js
@@ -125,7 +142,7 @@ const Projects = () => { // make images smaller as screen gets smaller then star
         </div>
       </figcaption>
       </figure>
-      <figure className='imghvr-push-left' style={{margin: '12px'}}>
+      <figure className='imghvr-push-left' style={{margin: '12px', border: '1px solid black'}}>
       <img src={tempImage} alt='' height='245' width="360" />
             <figcaption style={{display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center'}}>
         A node application that performs a simple email and password authentication using passport js
@@ -141,7 +158,7 @@ const Projects = () => { // make images smaller as screen gets smaller then star
         </div>
       </figcaption>
       </figure>
-      <figure className='imghvr-push-left' style={{margin: '12px'}}>
+      <figure className='imghvr-push-left' style={{margin: '12px', border: '1px solid black'}}>
       <img src={tempImage} alt='' height='245' width="360" />
             <figcaption style={{display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center'}}>
         A node application that performs a simple email and password authentication using passport js
@@ -157,7 +174,7 @@ const Projects = () => { // make images smaller as screen gets smaller then star
         </div>
       </figcaption>
       </figure>
-      <figure className='imghvr-push-left' style={{margin: '12px'}}>
+      <figure className='imghvr-push-left' style={{margin: '12px', border: '1px solid black'}}>
       <img src={tempImage} alt='' height='245' width="360" />
             <figcaption style={{display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center'}}>
         A node application that performs a simple email and password authentication using passport js
@@ -173,23 +190,7 @@ const Projects = () => { // make images smaller as screen gets smaller then star
         </div>
       </figcaption>
       </figure>
-      <figure className='imghvr-push-left' style={{margin: '12px'}}>
-      <img src={tempImage} alt='' height='245' width="360" />
-            <figcaption style={{display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center'}}>
-        A node application that performs a simple email and password authentication using passport js
-        <div style={{marginTop: '30%'}}>
-        <div style={{display: 'flex'}}>
-        <form method='GET' action='https://awesome-turing-811668.netlify.com/'>
-          <Button type="submit" >Visit Site</Button>
-        </form>
-        <form method='GET' action='https://github.com/Ma7eer/Guess-the-flag'>
-          <Button type="submit" >View Code</Button>
-        </form>
-        </div>
-        </div>
-      </figcaption>
-      </figure>
-      <figure className='imghvr-push-left' style={{margin: '12px'}}>
+      <figure className='imghvr-push-left' style={{margin: '12px', border: '1px solid black'}}>
       <img src={tempImage} alt='' height='245' width="360" />
             <figcaption style={{display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center'}}>
         A node application that performs a simple email and password authentication using passport js
