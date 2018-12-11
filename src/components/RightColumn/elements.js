@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 export const PageContainer = styled.div`
-    background-color: white;
     padding-left: 25%;
 `
 
@@ -184,6 +183,17 @@ export const GridFigureIcons = styled.span`
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         content: \e000;
-    }    
+    }
 
+`
+
+export const Button = styled.button`
+    border: 1.2px solid white;
+    border-radius: 4px;
+    color: white;
+    background-color: blue;
+    font-size: 16px;
+    padding: 8px;
+    margin: 5px;
+    cursor: pointer;
 `

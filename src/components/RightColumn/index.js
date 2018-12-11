@@ -7,8 +7,9 @@ import '../../../node_modules/imagehover.css/css/imagehover.css'
 import Header from '../Header'
 import SkillsCard from '../SkillsCard'
 import ArticleList from '../ArticleList'
-import { PageContainer, ContentContainer, ContentItem, IconContainer, TextLink } from './elements'
+import { PageContainer, ContentContainer, ContentItem, IconContainer, TextLink, Button } from './elements'
 import tempImage from '../../images/profile.jpg'
+import ProjectOneImg from '../../images/project1.png'
 
 const ContactLink = ({goToLink, linkIcon, text}) => {
   return (
@@ -58,13 +59,19 @@ const Projects = () => { // make images smaller as screen gets smaller then star
     <PageContainer>
       <Header text='Projects' />
       <div className='project-grid' style={{padding: '2rem 0 4rem', display: 'flex', flexWrap: 'wrap', justifyContent: 'center'}}>
-      <figure className='imghvr-push-left' style={{margin: '12px'}}>
-      <img src={tempImage} alt='' height='245' width="360" />
+      <figure className='imghvr-push-left' style={{margin: '12px', border: '1px solid black'}}>
+      <img src={ProjectOneImg} alt='' height='245' width="360" />
       <figcaption style={{display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center'}}>
-        A node application that performs a simple email and password authentication using passport js
+        A "Guess the flag" game built using React js. Fully responsive for mobile devices.
         <div style={{marginTop: '30%'}}>
-        <button>Visit Site</button>
-        <button>View Code</button>
+        <div style={{display: 'flex'}}>
+        <form method='GET' action='https://awesome-turing-811668.netlify.com/'>
+          <Button type="submit" >Visit Site</Button>
+        </form>
+        <form method='GET' action='https://github.com/Ma7eer/Guess-the-flag'>
+          <Button type="submit" >View Code</Button>
+        </form>
+        </div>
         </div>
       </figcaption>
       </figure>
@@ -73,8 +80,14 @@ const Projects = () => { // make images smaller as screen gets smaller then star
             <figcaption style={{display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center'}}>
         A node application that performs a simple email and password authentication using passport js
         <div style={{marginTop: '30%'}}>
-        <button>Visit Site</button>
-        <button>View Code</button>
+        <div style={{display: 'flex'}}>
+        <form method='GET' action='https://awesome-turing-811668.netlify.com/'>
+          <Button type="submit" >Visit Site</Button>
+        </form>
+        <form method='GET' action='https://github.com/Ma7eer/Guess-the-flag'>
+          <Button type="submit" >View Code</Button>
+        </form>
+        </div>
         </div>
       </figcaption>
       </figure>
@@ -83,8 +96,14 @@ const Projects = () => { // make images smaller as screen gets smaller then star
             <figcaption style={{display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center'}}>
         A node application that performs a simple email and password authentication using passport js
         <div style={{marginTop: '30%'}}>
-        <button>Visit Site</button>
-        <button>View Code</button>
+        <div style={{display: 'flex'}}>
+        <form method='GET' action='https://awesome-turing-811668.netlify.com/'>
+          <Button type="submit" >Visit Site</Button>
+        </form>
+        <form method='GET' action='https://github.com/Ma7eer/Guess-the-flag'>
+          <Button type="submit" >View Code</Button>
+        </form>
+        </div>
         </div>
       </figcaption>
       </figure>
@@ -93,8 +112,14 @@ const Projects = () => { // make images smaller as screen gets smaller then star
             <figcaption style={{display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center'}}>
         A node application that performs a simple email and password authentication using passport js
         <div style={{marginTop: '30%'}}>
-        <button>Visit Site</button>
-        <button>View Code</button>
+        <div style={{display: 'flex'}}>
+        <form method='GET' action='https://awesome-turing-811668.netlify.com/'>
+          <Button type="submit" >Visit Site</Button>
+        </form>
+        <form method='GET' action='https://github.com/Ma7eer/Guess-the-flag'>
+          <Button type="submit" >View Code</Button>
+        </form>
+        </div>
         </div>
       </figcaption>
       </figure>
@@ -103,8 +128,14 @@ const Projects = () => { // make images smaller as screen gets smaller then star
             <figcaption style={{display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center'}}>
         A node application that performs a simple email and password authentication using passport js
         <div style={{marginTop: '30%'}}>
-        <button>Visit Site</button>
-        <button>View Code</button>
+        <div style={{display: 'flex'}}>
+        <form method='GET' action='https://awesome-turing-811668.netlify.com/'>
+          <Button type="submit" >Visit Site</Button>
+        </form>
+        <form method='GET' action='https://github.com/Ma7eer/Guess-the-flag'>
+          <Button type="submit" >View Code</Button>
+        </form>
+        </div>
         </div>
       </figcaption>
       </figure>
@@ -113,8 +144,14 @@ const Projects = () => { // make images smaller as screen gets smaller then star
             <figcaption style={{display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center'}}>
         A node application that performs a simple email and password authentication using passport js
         <div style={{marginTop: '30%'}}>
-        <button>Visit Site</button>
-        <button>View Code</button>
+        <div style={{display: 'flex'}}>
+        <form method='GET' action='https://awesome-turing-811668.netlify.com/'>
+          <Button type="submit" >Visit Site</Button>
+        </form>
+        <form method='GET' action='https://github.com/Ma7eer/Guess-the-flag'>
+          <Button type="submit" >View Code</Button>
+        </form>
+        </div>
         </div>
       </figcaption>
       </figure>
@@ -123,8 +160,14 @@ const Projects = () => { // make images smaller as screen gets smaller then star
             <figcaption style={{display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center'}}>
         A node application that performs a simple email and password authentication using passport js
         <div style={{marginTop: '30%'}}>
-        <button>Visit Site</button>
-        <button>View Code</button>
+        <div style={{display: 'flex'}}>
+        <form method='GET' action='https://awesome-turing-811668.netlify.com/'>
+          <Button type="submit" >Visit Site</Button>
+        </form>
+        <form method='GET' action='https://github.com/Ma7eer/Guess-the-flag'>
+          <Button type="submit" >View Code</Button>
+        </form>
+        </div>
         </div>
       </figcaption>
       </figure>
@@ -133,8 +176,14 @@ const Projects = () => { // make images smaller as screen gets smaller then star
             <figcaption style={{display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center'}}>
         A node application that performs a simple email and password authentication using passport js
         <div style={{marginTop: '30%'}}>
-        <button>Visit Site</button>
-        <button>View Code</button>
+        <div style={{display: 'flex'}}>
+        <form method='GET' action='https://awesome-turing-811668.netlify.com/'>
+          <Button type="submit" >Visit Site</Button>
+        </form>
+        <form method='GET' action='https://github.com/Ma7eer/Guess-the-flag'>
+          <Button type="submit" >View Code</Button>
+        </form>
+        </div>
         </div>
       </figcaption>
       </figure>
@@ -143,8 +192,14 @@ const Projects = () => { // make images smaller as screen gets smaller then star
             <figcaption style={{display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center'}}>
         A node application that performs a simple email and password authentication using passport js
         <div style={{marginTop: '30%'}}>
-        <button>Visit Site</button>
-        <button>View Code</button>
+        <div style={{display: 'flex'}}>
+        <form method='GET' action='https://awesome-turing-811668.netlify.com/'>
+          <Button type="submit" >Visit Site</Button>
+        </form>
+        <form method='GET' action='https://github.com/Ma7eer/Guess-the-flag'>
+          <Button type="submit" >View Code</Button>
+        </form>
+        </div>
         </div>
       </figcaption>
       </figure>

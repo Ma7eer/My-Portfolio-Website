@@ -15,6 +15,7 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
+    height: 100%;
   }
 `
 // background-color: ${Colors.primary};
