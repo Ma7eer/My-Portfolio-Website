@@ -9,7 +9,7 @@ import SkillsCard from '../SkillsCard'
 import ArticleList from '../ArticleList'
 import { PageContainer, ContentContainer, ContentItem, IconContainer, TextLink, Button } from './elements'
 import tempImage from '../../images/profile.jpg'
-import ProjectOneImg from '../../images/guessTheFlag.png'
+import ProjectOneImg from '../../images/guessTheFlag.PNG'
 
 const ContactLink = ({goToLink, linkIcon, text}) => {
   return (
